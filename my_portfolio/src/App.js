@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Hero from './components/Hero/Hero'
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import Skills from './components/Skills/Skills';
 
 class App extends Component {
   render() {
@@ -11,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Header></Header>
         <Hero></Hero>
+        <Skills></Skills>
         <Footer></Footer>
       </div>
     );

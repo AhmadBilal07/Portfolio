@@ -12,7 +12,7 @@ const Styles = styled.div`
     background: white;
     font-weight: 400;
     color: dark-blue;
-    padding: 0rem 5.6rem;
+    padding: 0rem 3.2vw;
     margin-bottom: 0;
     top: 0;
     bottom: 0;
@@ -20,11 +20,11 @@ const Styles = styled.div`
     z-index: -1;
     background: url("assets/hero_background.svg");
     background-position: right;
-    background-size: auto;
+    background-size: 50vw;
     background-repeat: no-repeat;
   }
   .hero-title {
-    font-size: 3.2rem;
+    font-size: 3.2vw;
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;

@@ -15,11 +15,12 @@ const Styles = styled.div`
     float: left;
     color: #272341;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 3.2vw;
     text-decoration: none;
-    font-size: 17px;
-    font-weight:bold;
+    font-size: 1.1vw;
+    font-weight:normal;
     display:inline-block;
+
   }
 `;
 
