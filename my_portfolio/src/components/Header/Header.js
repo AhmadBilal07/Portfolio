@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Styles = styled.div`
   header {
     display: none;
+    z-index: 999;
   }
   header.scrolled {
     background-color: white;

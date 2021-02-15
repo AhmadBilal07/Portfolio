@@ -55,7 +55,7 @@ const Hero = () => {
 
   return (
     <Styles>
-      <section id="hero" className="jumbotron">
+      <section id="hero">
         <Fade
           left={isDesktop}
           bottom={isMobile}
@@ -67,7 +67,7 @@ const Hero = () => {
             {"Hi, my name is"}{" "}
             <span className="text-color-main">{"Ahmad Bilal Aslam"}</span>
             <br />
-            <Fade bottom={true} duration={1000} delay={1000} distance="30px">
+            <Fade bottom={true} duration={1000} delay={700} distance="30px">
               {"I'm a Software Developer."}
             </Fade>
           </h1>
