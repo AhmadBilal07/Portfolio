@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import styled from "styled-components";
+import FormHandler from "../FormHandler/FormHandler"
 
 const Styles = styled.div`
   #Contact {
@@ -29,7 +30,9 @@ const Contact = () => {
   return (
     <Styles>
       <h1>Contact Me</h1>
-      <section id="Contact"></section>
+      <section id="Contact">
+          <FormHandler></FormHandler>
+      </section>
     </Styles>
   );
 };
