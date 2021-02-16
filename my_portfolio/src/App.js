@@ -4,7 +4,7 @@ import Hero from './components/Hero/Hero'
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Skills from './components/Skills/Skills';
-
+import Projects from './components/Projects/Projects';
 class App extends Component {
   render() {
     return (
@@ -12,6 +12,7 @@ class App extends Component {
         <Header></Header>
         <Hero></Hero>
         <Skills></Skills>
+        <Projects></Projects>
         <Footer></Footer>
       </div>
     );
