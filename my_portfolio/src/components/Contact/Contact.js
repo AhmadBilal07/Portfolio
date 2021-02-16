@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {  useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import styled from "styled-components";
 
@@ -18,21 +18,22 @@ const Styles = styled.div`
     bottom: 0;
     right: 0;
     z-index: -1;
-    background: url("assets/blog-svg.svg");
-    background-position: right;
-    background-size: 55vw;
+    background: url("assets/email.svg");
+    background-position: left;
+    background-size: 40vw;
     background-repeat: no-repeat;
   }
+
 `;
 
-const Projects = () => {
+const Contact = () => {
   return (
     <Styles>
       <section id="Projects">
-        <h1>Projects</h1>
+       <h1>Contact Me</h1>
       </section>
     </Styles>
   );
 };
 
-export default Projects;
+export default Contact;
