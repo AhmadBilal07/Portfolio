@@ -4,8 +4,7 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .box {
-    width: 100%;
-    height: 600px;
+    
     background-color: #6a1b9a;
     webkit-transform: skewY(6deg);
     -moz-transform: skewY(6deg);

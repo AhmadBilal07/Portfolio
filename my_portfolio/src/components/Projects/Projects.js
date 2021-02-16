@@ -5,16 +5,11 @@ import Project from "./project/project";
 
 const Styles = styled.div`
   #projectsSection {
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
+    display:flex;
+    min-height:100vh;
   }
   #projectsSectionLeft {
     diplay: flex;
-    flex-flow: wrap;
-    alignitems: center;
-    justifycontent: center;
-    flex-direction:row;
     width:50%;
   }
   #projectsSectionRight {
@@ -30,15 +25,14 @@ const Styles = styled.div`
     background-position: right;
     background-size: 55vw;
     background-repeat: no-repeat;
-    flex-wrap: wrap;
   }
 `;
 
 const Projects = () => {
   return (
     <Styles>
+      <h1>Projects</h1>
       <section id="projectsSection">
-        <h1>Projects</h1>
         <section id="projectsSectionLeft">
           <Project></Project>
           <Project></Project>

@@ -35,7 +35,7 @@ const Styles = styled.div`
     z-index: 99;
     background-color: white;
     border-style: solid;
-    border-color: #e3f2fe;
+    border-color: #02c3ae;
     color: white;
     cursor: pointer;
     padding: 5px;

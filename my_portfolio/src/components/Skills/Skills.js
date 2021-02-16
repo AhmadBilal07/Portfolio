@@ -37,7 +37,7 @@ const Styles = styled.div`
     left: 0;
     right: 0;
     z-index: -1;
-    background: url("assets/skills.svg");
+    background: url("assets/skills-svg.svg");
     background-position: left;
     background-size: 60vw;
     background-repeat: no-repeat;  

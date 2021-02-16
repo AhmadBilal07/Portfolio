@@ -2,7 +2,7 @@ import React,{ useState } from 'react'
 import styled from "styled-components";
 
 const Styles = styled.div`
- background: lavender;
+ 
  padding: 20px;
  h1 {
     border-bottom: 1px solid white;
@@ -18,6 +18,7 @@ const Styles = styled.div`
   form {
     background: white;
     border: 1px solid #dedede;
+    border-radius:10%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,26 +80,17 @@ const Styles = styled.div`
       >
         <div>
           <label>Name</label>
-          <input name="name" onChange={onInputChange} value={state.name} />
+          <input name="name" onChange={onInputChange} value={state.name} required />
         </div>
         <div>
-          <label>Category</label>
-          <select
-            name="category"
-            onChange={onInputChange}
-            value={state.category}
-          >
-            <option value=""></option>
-            <option value="meat">Meat</option>
-            <option value="fish">Fish</option>
-            <option value="greens">Greens</option>
-          </select>
+          <label>Email</label>
+          <input name="email" onChange={onInputChange} value={state.email} required type="email" />
         </div>
         <div>
-          <label>Price</label>
-          <input name="price" onChange={onInputChange} value={state.price} />
+          <label>Message</label>
+          <input name="msg" onChange={onInputChange} value={state.msg} type="text" required/>
         </div>
-        <input type="submit" className="submitButton" />
+        <input type="submit" className="submitButton" value="Shoot!"/>
       </form>
     </Styles>
   );
