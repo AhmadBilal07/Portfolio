@@ -13,13 +13,13 @@ const Styles = styled.div`
 }
 .anchorTwitter {
 	border-radius: 100%;
-  border-color:red;
+  padding:2px;
 }
 .anchorTwitter:hover {
-	background: gray;
+	background: black;
 }
 #twitterLogo {
-	width: 05%;
+	width: 15vw;
 	height: auto;
 }
 `;
@@ -57,17 +57,11 @@ const Footer = () => {
           target="_blank"
         ></SocialIcon>
         <div className="logoHolder">
-          <a
-            href={"https://twitter.com/AhmadBilal07"}
-            target="_blank"
-            className="anchorTwitter"
-          >
-            <img
-              src={twitterLogo}
-              id="twitterLogo"
-              alt="Twitter Link"
-            />
-          </a>
+        <SocialIcon   className="anchorTwitter"
+          url="http://twitter.com/ahmadbilal07"
+          target="_blank"
+        ></SocialIcon>
+          
         </div>
       </footer>
     </Styles>

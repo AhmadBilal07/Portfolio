@@ -1,9 +1,9 @@
-import React, {  useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import styled from "styled-components";
 
 const Styles = styled.div`
-  #Projects {
+  #Contact {
     min-height: 100vh;
     height: 100vh;
     display: flex;
@@ -23,15 +23,13 @@ const Styles = styled.div`
     background-size: 40vw;
     background-repeat: no-repeat;
   }
-
 `;
 
 const Contact = () => {
   return (
     <Styles>
-      <section id="Projects">
-       <h1>Contact Me</h1>
-      </section>
+      <h1>Contact Me</h1>
+      <section id="Contact"></section>
     </Styles>
   );
 };
