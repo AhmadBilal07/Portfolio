@@ -13,55 +13,56 @@ import ScikitLearnLogo from "./images/ScikitLearn.png";
 import sqlLogo from "./images/sql.png";
 const Styles = styled.div`
   #skillSection {
-  display:flex;
-  flex-direction:row;
-  min-height:100vh;
+    display:flex !important;
+    flex-direction:row;
+    min-height:100vh;
+    flex-wrap:wrap;
+    justify-content: center;
   }
  
   .skill img {
+    min-width:50px;
     width: 5vw;
     height: auto;
   }
+  
+
   #skillSectionRight {
-    diplay: flex;
-    flex-wrap: wrap;
-    alignItems: center;
-    justifyContent: center;
+    width:40% !important; 
+    padding-top:10%;
+    flex-direction: row;
+    @media only screen and (max-width: 600px) {padding-top:0%;
+      width:100% !important;}
+    
   }
-  #skillSectionLeft {
-    min-width:50%;
-    min-height:100%
-    margin-bottom: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background: url("assets/skills-svg.svg");
-    background-position: left;
-    background-size: 60vw;
-    background-repeat: no-repeat;  
+  #skillSectionLeft img{
+    content: url("assets/skills-svg.svg");
+    content-position: left;
+    content-size: 60vw;
+    content-repeat: no-repeat;
   } 
   #skillSectionRight h1 {
     padding-top:50px;
   }
   #skillSectionRight span {
-    flex: 1 0 21%; /* explanation below */
-  margin: 30px 20px;
-  height: 100px;
+    margin:  25px;
+    min-height: 100px;
   }
 `;
 
 const Skills = () => {
   return (
     <Styles>
+      <h1>Skills</h1>
       <section id="skillSection">
         <Fade left={true} duration={1000} delay={100} distance="200px">
-          <section id="skillSectionLeft"></section>{" "}
+          <section id="skillSectionLeft">
+            <img></img>
+          </section>
         </Fade>
+
         <Fade bottom={true} duration={1000} delay={500} distance="30px">
           <section id="skillSectionRight">
-            <h1>Skills</h1>
             <span className="skill">
               <img src={htmlLogo} />
             </span>

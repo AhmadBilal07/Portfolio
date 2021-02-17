@@ -8,15 +8,17 @@ const Styles = styled.div`
     display:flex;
     flex-direction:row;
     min-height:100vh;
+    flex-wrap:wrap;
+    justify-content: center;
   }
   #contactSectionRight {
-    width:50%;
     padding-top:5%;
   }
   #contactSectionLeft {
-    width:50%;
-    min-height:100%
+    
+    min-height:100px !important;
     margin-bottom: 0;
+    min-width:50% !important; 
     top: 0;
     bottom: 0;
     left: 0;
@@ -24,7 +26,7 @@ const Styles = styled.div`
     z-index: -1;
     background: url("assets/email.svg");
     background-position: left;
-    background-size: 35vw;
+    background-size: 32vw;
     background-repeat: no-repeat;
   }
 `;

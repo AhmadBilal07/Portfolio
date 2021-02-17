@@ -16,9 +16,9 @@ const Styles = styled.div`
     float: left;
     color: #272341;
     text-align: center;
-    padding: 14px 3.2vw;
+    padding: 5px 3.2vw;
     text-decoration: none;
-    font-size: 1.1vw;
+    font-size:calc(5px + 1.1vw);
     font-weight:normal;
     display:inline-block;
 
