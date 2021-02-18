@@ -4,6 +4,7 @@ const Styles = styled.div`
   header {
     display: none;
     z-index: 999;
+    box-shadow: 5px 7px 15px -10px #888888
   }
   header.scrolled {
     background-color: white;
@@ -21,7 +22,11 @@ const Styles = styled.div`
     font-size:calc(5px + 1.1vw);
     font-weight:normal;
     display:inline-block;
-
+    box-shadow: 5px 7px 15px -12px #888888;
+  }
+  header a:hover {
+    box-shadow: 5px 7px 15px 1px #888888;
+    cursor: pointer;
   }
 `;
 
