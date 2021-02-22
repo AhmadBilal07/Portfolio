@@ -81,7 +81,7 @@ const Styles = styled.div`
   opacity: 0;
 }
 #mainNav ul li a:hover {
-  color: #02CBAD;
+  color: #FFBE55;
   z-index: 1;
 }
 #mainNav ul li a:hover:after {
@@ -93,6 +93,7 @@ const Styles = styled.div`
   height:48px !important;
 
 }
+
 
 `;
 

@@ -5,13 +5,7 @@ import { SocialIcon } from "react-social-icons";
 import twitterLogo from "./twitterLogo.png";
 import upKey from "./top.png";
 const Styles = styled.div`
-  .logoHolder {
-    bottom: 15px;
-    right: 0;
-    height: 20px;
-    margin-right: 10px;
-    text-align: left;
-  }
+ 
   .anchorTwitter {
     border-radius: 100%;
     padding: 2px;
@@ -35,11 +29,14 @@ const Styles = styled.div`
     z-index: 99;
     background-color: white;
     border-style: solid;
-    border-color: #02c3ae;
+    border-color: #0e538c;
     color: white;
     cursor: pointer;
     padding: 5px;
     border-radius: 10%;
+  }
+  .back-to-top.scrolled:hover {
+    border-color: rgb(255, 190, 85, 1);
   }
 `;
 
@@ -71,18 +68,8 @@ const Footer = () => {
             </a>
           </span>
         </Link>
-        <div className="social-links"></div>
+        <div className="social-links">
         <hr />
-        <p className="footer__text">
-          {new Date().getFullYear()}©{" "}
-          <a
-            href="https://github.com/ahmadbilal07"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ahmad Bilal Aslam
-          </a>
-        </p>
         <SocialIcon
           url="http://linkedin.com/in/ahmadbilal07"
           target="_blank"
@@ -94,14 +81,17 @@ const Footer = () => {
         <SocialIcon
           url="http://github.com/ahmadbilal07"
           target="_blank"
-        ></SocialIcon>
-        <div className="logoHolder">
-          <SocialIcon
-            className="anchorTwitter"
-            url="http://twitter.com/ahmadbilal07"
+        ></SocialIcon></div>
+         <p className="footer__text">
+          {new Date().getFullYear()}©{" "}
+          <a
+            href="https://github.com/ahmadbilal07"
             target="_blank"
-          ></SocialIcon>
-        </div>
+            rel="noopener noreferrer"
+          >
+            Ahmad Bilal Aslam
+          </a>
+        </p>
       </footer>
     </Styles>
   );
