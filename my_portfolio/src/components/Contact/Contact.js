@@ -34,7 +34,7 @@ const Styles = styled.div`
 const Contact = () => {
   return (
     <Styles>
-      <h1>Contact Me</h1>
+      <h1>CONTACT ME</h1>
       <section id="contactSection">
         <section id="contactSectionLeft"></section>
         <section id="contactSectionRight">

@@ -3,18 +3,14 @@ import styled from "styled-components";
 const Styles = styled.div`
   header {
     display: none;
-    // z-index: 999;
-    // box-shadow: 5px 7px 15px -10px #888888;
     background-color:white;
     font-family:"arial";
     text-transform:uppercase;
     text-align:center;
     z-index: 999;
-    
     line-height: 3;
   }
   header.scrolled {
-    //background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
@@ -22,9 +18,12 @@ const Styles = styled.div`
   }
 #mainNav ul {
   list-style: none;
-  margin:0;
+  margin:0px;
   padding-inline-start: 0px;
   box-shadow: 0 1px 10px #777 !important;
+  @media only screen and (max-width: 600px) {
+  //  margin-left:-30px;
+  }
 }
 #mainNav ul li {
   display: inline-block;
@@ -59,7 +58,7 @@ const Styles = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  //margin: auto;
   width: 0%;
   content: '.';
   color: transparent;
@@ -71,7 +70,7 @@ const Styles = styled.div`
 }
 
 #mainNav ul li a {
-  transition: all 1s;
+  transition: all 0.75s;
 }
 
 #mainNav ul li a:after {
@@ -118,7 +117,7 @@ const Header = () => {
   return (
     <Styles>
       <header className={state.scrolled ? "scrolled" : ""}>
-        <nav class="stroke" id="mainNav">
+        <nav className="stroke" id="mainNav">
           <ul>
             <li>
               <a href="#">about</a>
@@ -127,7 +126,7 @@ const Header = () => {
               <a href="#">Skills</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projectsSection">Projects</a>
             </li>
             <li>
               <a href="#">Contact</a>

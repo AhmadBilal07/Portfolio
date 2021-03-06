@@ -1,56 +1,46 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Typography from "@material-ui/core/Typography";
 
-const Styles = styled.div`
-  .card {
-    width: 30%;  
-    background-color: white;
-    border-style: solid;
-    border-color: #02c3ae;
-  }
-  .card-title {
-    font-size: calc(7px + 1.1vw);
-    margin-bottom: 1px;
-  }
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 215,
+    minWidth:215
+  },
+  media: {
+    height: 100,
+  },
+});
 
-  .card-text {
-    text-align: justify;
-    text-decoration: none;
-    @media only screen and (max-width: 600px) {
-      font-size: calc(5px + 1.1vw);
-    }
-    font-weight: normal;
-  }
-  .card img {
-    max-width: 150px;
-    height: 50px;
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
-`;
+export default function MediaCard(props) {
+  const classes = useStyles();
 
-const Project = (props) => {
   return (
-    <Styles>
-      <section id="Project" className={props.class}>
-        <div class="card">
-          <img src={props.img} class="card-img-top" />
-          <div class="card-body">
-            <a href={props.link} target="_blank">
-              <h5 class="card-title">{props.title}</h5>
-            </a>
-            <p class="card-text">
-              America's leading online tool retailer. Developed on Saleforce
-              Commerce Cloud. I was part of the core team & later support team.
-              Worked on Checkout, PLP, PDP and other related components.
-            </p>
-          </div>
-        </div>
-      </section>
-    </Styles>
+    <section className={props.class}>
+      <a href = {props.link} target='_blank' style={{textDecoration: "none"}} >
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image={props.img}
+              title={props.title}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {props.title}
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </a>
+    </section>
   );
-};
-
-export default Project;
+}

@@ -53,7 +53,7 @@ const Styles = styled.div`
 const Skills = () => {
   return (
     <Styles>
-      <h1>Skills</h1>
+      <h1>SKILLS</h1>
       <section id="skillSection">
         <Fade left={true} duration={1000} delay={100} distance="200px">
           <section id="skillSectionLeft">

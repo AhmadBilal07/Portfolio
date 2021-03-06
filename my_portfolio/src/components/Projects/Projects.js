@@ -6,28 +6,36 @@ import Project from "./project/project";
 const Styles = styled.div`
   #projectsSection {
     display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    min-height:100vh;
   }
   #projectsSectionLeft {
-    width: 60% !important;
-    display:flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    @media only screen and (max-width: 600px) {
-      width: 100% !important;
-    }
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   #projectsSectionLeft .project {
-    margin: 25px;
-    min-height: 100px;
+    padding: 10px;
   }
-
+  #projectsSectionRight {
+    flex: 1;
+    min-width: 35%;
+    @media only screen and (max-width: 600px) {
+      min-width: 100%;
+    }
+  }
   #projectsSectionRight img {
     z-index: -1;
-    content: url("assets/blog-svg.svg");
+    content: url("assets/blog-svg-svg (1).svg");
     content-position: right;
-    width: 40%;
+    width: 120%;
+    float: right;
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+      float: left !important;
+    }
   }
 
   h1 {
@@ -38,7 +46,7 @@ const Styles = styled.div`
 const Projects = () => {
   return (
     <Styles>
-      <h1>Projects</h1>
+      <h1>PROJECTS</h1>
       <section id="projectsSection">
         <Fade bottom={true} duration={1000} delay={500} distance="30px">
           <section id="projectsSectionLeft">
@@ -46,18 +54,18 @@ const Projects = () => {
               class="project"
               title="CPO Outlets"
               link="https://www.cpooutlets.com/"
-              img="https://www.savings.com/images/savings/logo/4214751.png"
+              img= {process.env.PUBLIC_URL + '/assets/CPO-svg.svg'}
             ></Project>
             <Project
               class="project"
               title="Burger Builder"
-              img="https://user-images.githubusercontent.com/29265857/43362634-9a4fa826-92c5-11e8-961b-05e20ba8c883.png"
+              img=  {process.env.PUBLIC_URL + '/assets/burger1.svg'}
             ></Project>
             <Project
               class="project"
               title="Face Scope"
-              link="https://facescope.herokuapp.com//"
-              img="https://facescope.herokuapp.com/images/cover.png"
+              link="https://facescope.herokuapp.com/"
+              img={process.env.PUBLIC_URL + '/assets/faceScope.png'}
             ></Project>
           </section>
         </Fade>

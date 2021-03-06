@@ -5,7 +5,6 @@ import { SocialIcon } from "react-social-icons";
 import twitterLogo from "./twitterLogo.png";
 import upKey from "./top.png";
 const Styles = styled.div`
- 
   .anchorTwitter {
     border-radius: 100%;
     padding: 2px;
@@ -38,6 +37,9 @@ const Styles = styled.div`
   .back-to-top.scrolled:hover {
     border-color: rgb(255, 190, 85, 1);
   }
+  .back-to-top.scrolled {
+    transition: all 0.5s;
+  }
 `;
 
 const Footer = () => {
@@ -63,26 +65,25 @@ const Footer = () => {
       <footer className="footer navbar-static-bottom">
         <Link to="hero" smooth duration={1000}>
           <span className={"back-to-top" + (state.scrolled ? " scrolled" : "")}>
-            <a href="#">
               <img src={upKey}></img>
-            </a>
           </span>
         </Link>
-        <div className="social-links">
-        <hr />
-        <SocialIcon
-          url="http://linkedin.com/in/ahmadbilal07"
-          target="_blank"
-        ></SocialIcon>
-        <SocialIcon
-          url="http://twitter.com/ahmadbilal07"
-          target="_blank"
-        ></SocialIcon>
-        <SocialIcon
-          url="http://github.com/ahmadbilal07"
-          target="_blank"
-        ></SocialIcon></div>
-         <p className="footer__text">
+        {/* <div className="social-links">
+          <hr/>
+          <SocialIcon
+            url="http://linkedin.com/in/ahmadbilal07"
+            target="_blank"
+          ></SocialIcon>
+          <SocialIcon
+            url="http://twitter.com/ahmadbilal07"
+            target="_blank"
+          ></SocialIcon>
+          <SocialIcon
+            url="http://github.com/ahmadbilal07"
+            target="_blank"
+          ></SocialIcon>
+        </div> */}
+        <p className="footer__text">
           {new Date().getFullYear()}©{" "}
           <a
             href="https://github.com/ahmadbilal07"
