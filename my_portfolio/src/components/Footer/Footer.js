@@ -46,10 +46,11 @@ const Styles = styled.div`
     padding: 10px 0 5px;
     font-size: 15px;
     line-height: 35px;
-    color: #737373;
+
   }
   .site-footer .copyright-text {
     line-height: 40px;
+    color:#0e538c;
   }
   .site-footer a {
     color: #737373;
@@ -58,6 +59,9 @@ const Styles = styled.div`
     color: #3366cc;
     text-decoration: none;
   }
+  .copyright-text  a:hover {
+    color: #ffbe55;
+  } 
   .footer-links {
     padding-left: 0;
     list-style: none;

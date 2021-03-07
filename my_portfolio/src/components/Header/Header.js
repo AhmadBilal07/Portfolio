@@ -44,9 +44,7 @@ const Styles = styled.div`
   #mainNav ul li a:before {
     transition: all 0.5s;
   }
-  #mainNav ul li a:hover {
-    color: #e34f25;
-  }
+ 
 
   /* stroke */
   #mainNav.stroke ul li a {
