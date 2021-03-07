@@ -10,12 +10,13 @@ const Styles = styled.div`
     min-height:100vh;
     flex-wrap:wrap;
     justify-content: center;
+    margin-top: -50px;
   }
   #contactSectionRight {
     padding-top:5%;
+
   }
   #contactSectionLeft {
-    
     min-height:100px !important;
     margin-bottom: 0;
     min-width:50% !important; 
@@ -29,12 +30,19 @@ const Styles = styled.div`
     background-size: 32vw;
     background-repeat: no-repeat;
   }
+  h1 {
+    padding-top: 0% !important; 
+    font-family: 'Roboto', sans-serif; !important;
+    font-weight: normal;
+    color:#0E538C;
+    padding-top: 60px !important; 
+  }
 `;
 
 const Contact = () => {
   return (
     <Styles>
-      <h1>CONTACT ME</h1>
+      <h1 id="contact">CONTACT ME</h1>
       <section id="contactSection">
         <section id="contactSectionLeft"></section>
         <section id="contactSectionRight">

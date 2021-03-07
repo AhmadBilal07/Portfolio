@@ -15,9 +15,15 @@ const Styles = styled.div`
   #skillSection {
     display:flex !important;
     flex-direction:row;
-    min-height:100vh;
+   
     flex-wrap:wrap;
     justify-content: center;
+  }
+  h1 {
+    padding-top: 60px !important; 
+    font-family: 'Roboto', sans-serif; !important;
+    font-weight: normal;
+    color:#0E538C;
   }
  
   .skill img {
@@ -29,7 +35,7 @@ const Styles = styled.div`
 
   #skillSectionRight {
     width:40% !important; 
-    padding-top:10%;
+    padding-top:8%;
     flex-direction: row;
     @media only screen and (max-width: 600px) {padding-top:0%;
       width:100% !important;}
@@ -41,6 +47,14 @@ const Styles = styled.div`
     content-size: 60vw;
     content-repeat: no-repeat;
   } 
+  .skill img{
+    transition: all 0.2s ease-in-out;
+    padding:5px;
+  }
+  .skill img:hover {
+    transform: scale(1.5);
+   
+  }
   #skillSectionRight h1 {
     padding-top:50px;
   }
@@ -53,7 +67,7 @@ const Styles = styled.div`
 const Skills = () => {
   return (
     <Styles>
-      <h1>SKILLS</h1>
+      <h1 id="skills">SKILLS</h1>
       <section id="skillSection">
         <Fade left={true} duration={1000} delay={100} distance="200px">
           <section id="skillSectionLeft">
@@ -64,34 +78,34 @@ const Skills = () => {
         <Fade bottom={true} duration={1000} delay={500} distance="30px">
           <section id="skillSectionRight">
             <span className="skill">
-              <img src={htmlLogo} />
+              <img src={htmlLogo} title="HTML"/>
             </span>
             <span className="skill">
-              <img src={cssLogo} />
+              <img src={cssLogo} title="CSS 3"/>
             </span>
             <span className="skill">
-              <img src={jsLogo} />
+              <img src={jsLogo} title="JavaScript"/>
             </span>
             <span className="skill">
-              <img src={nodejsLogo} />
+              <img src={nodejsLogo} title="Node.js"/>
             </span>
             <span className="skill">
-              <img src={reactLogo} />
+              <img src={reactLogo} title="ReactJs"/>
             </span>
             <span className="skill">
-              <img src={mongodbLogo} />
+              <img src={mongodbLogo} title="MongoDB"/>
             </span>
             <span className="skill">
-              <img src={sqlLogo} />
+              <img src={sqlLogo} title="SQL"/>
             </span>
             <span className="skill">
-              <img src={salesforceLogo} />
+              <img src={salesforceLogo} title="Salesforce Commerce Cloud"/>
             </span>
             <span className="skill">
-              <img src={pythonLogo} />
+              <img src={pythonLogo} title="Python"/>
             </span>
             <span className="skill">
-              <img src={ScikitLearnLogo} />
+              <img src={ScikitLearnLogo} title="SciKit Learn"/>
             </span>
           </section>
         </Fade>

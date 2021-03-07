@@ -17,7 +17,7 @@ const Styles = styled.div`
  
   form {
     background: white;
-    border: 1px solid #dedede;
+    border: 1px solid #0E538C;
     border-radius:10%;
     display: flex;
     flex-direction: column;
@@ -28,15 +28,18 @@ const Styles = styled.div`
   }
  
   input,select {
-    border: 1px solid #d9d9d9;
+    border: 1px solid #0E538C;
     border-radius: 4px;
     box-sizing: border-box;
     padding: 10px;
     width: 100%;
   }
+  input[type=text] {
+    height:60px;
+  }
  
   label,option {
-    color: #3d3d3d;
+    color: #0E538C;
     display: block;
     font-family: sans-serif;
     font-size: 14px;
@@ -48,7 +51,7 @@ const Styles = styled.div`
  }
  
   .submitButton {
-    background-color: #6976d9;
+    background-color: #0E538C;
     color: white;
     font-family: sans-serif;
     font-size: 14px;
