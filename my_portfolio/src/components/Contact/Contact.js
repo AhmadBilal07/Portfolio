@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import Fade from "react-reveal/Fade";
+import React from "react";
 import styled from "styled-components";
 import FormHandler from "../FormHandler/FormHandler";
 

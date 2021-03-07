@@ -71,41 +71,41 @@ const Skills = () => {
       <section id="skillSection">
         <Fade left={true} duration={1000} delay={100} distance="200px">
           <section id="skillSectionLeft">
-            <img></img>
+            <img alt=""></img>
           </section>
         </Fade>
 
         <Fade bottom={true} duration={1000} delay={500} distance="30px">
           <section id="skillSectionRight">
             <span className="skill">
-              <img src={htmlLogo} title="HTML"/>
+              <img src={htmlLogo} title="HTML" alt="HTML"/>
             </span>
             <span className="skill">
-              <img src={cssLogo} title="CSS 3"/>
+              <img src={cssLogo} title="CSS 3" alt="CSS 3"/>
             </span>
             <span className="skill">
-              <img src={jsLogo} title="JavaScript"/>
+              <img src={jsLogo} title="JavaScript" alt="JavaScript"/>
             </span>
             <span className="skill">
-              <img src={nodejsLogo} title="Node.js"/>
+              <img src={nodejsLogo} title="Node.js" alt="Node.js"/>
             </span>
             <span className="skill">
-              <img src={reactLogo} title="ReactJs"/>
+              <img src={reactLogo} title="ReactJs" alt="ReactJs"/>
             </span>
             <span className="skill">
-              <img src={mongodbLogo} title="MongoDB"/>
+              <img src={mongodbLogo} title="MongoDB" alt="MongoDB"/>
             </span>
             <span className="skill">
-              <img src={sqlLogo} title="SQL"/>
+              <img src={sqlLogo} title="SQL" alt="SQL"/>
             </span>
             <span className="skill">
-              <img src={salesforceLogo} title="Salesforce Commerce Cloud"/>
+              <img src={salesforceLogo} title="Salesforce Commerce Cloud" alt="Salesforce Commerce Cloud"/>
             </span>
             <span className="skill">
-              <img src={pythonLogo} title="Python"/>
+              <img src={pythonLogo} title="Python" alt="Python"/>
             </span>
             <span className="skill">
-              <img src={ScikitLearnLogo} title="SciKit Learn"/>
+              <img src={ScikitLearnLogo} title="SciKit Learn" alt="SciKit Learn"/>
             </span>
           </section>
         </Fade>

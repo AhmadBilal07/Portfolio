@@ -34,6 +34,11 @@ const Styles = styled.div`
     padding: 10px;
     width: 100%;
   }
+  input:focus {
+    border: 1px solid #ffbe55 !important;
+    outline: none !important;
+
+  }
   input[type=text] {
     height:60px;
   }
@@ -56,6 +61,11 @@ const Styles = styled.div`
     font-family: sans-serif;
     font-size: 14px;
     margin: 20px 0px;
+    transition: all 0.7s;
+  }
+    .submitButton:hover {
+      color: #ffbe55;
+    }
  `;
 
  const Form = (props) => {
