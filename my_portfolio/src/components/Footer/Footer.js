@@ -2,20 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 const Styles = styled.div`
-  .anchorTwitter {
-    border-radius: 100%;
-    padding: 2px;
-  }
-  .anchorTwitter:hover {
-    background: black;
-  }
-  #twitterLogo {
-    width: 15vw;
-    height: auto;
-  }
   .back-to-top {
     display: none;
-    /* Rounded corners */
   }
   .back-to-top.scrolled {
     display: block;
@@ -35,6 +23,8 @@ const Styles = styled.div`
   }
   .back-to-top.scrolled:hover {
     border-color: rgb(255, 190, 85, 1);
+    color: #3366cc;
+    text-decoration: none;
   }
   .back-to-top.scrolled {
     transition: all 0.5s;
@@ -46,22 +36,11 @@ const Styles = styled.div`
     padding: 10px 0 5px;
     font-size: 15px;
     line-height: 35px;
-
   }
   .site-footer .copyright-text {
     line-height: 40px;
     color:#0e538c;
   }
-  .site-footer a {
-    color: #737373;
-  }
-  .site-footer a:hover {
-    color: #3366cc;
-    text-decoration: none;
-  }
-  .copyright-text  a:hover {
-    color: #ffbe55;
-  } 
   .footer-links {
     padding-left: 0;
     list-style: none;
@@ -69,12 +48,8 @@ const Styles = styled.div`
   .footer-links li {
     display: block;
   }
-  .footer-links a {
-    color: #737373;
-  }
-
   .site-footer .social-icons {
-    text-align: right;
+    text-align: center;
   }
   .site-footer .social-icons a {
     width: 40px;
@@ -89,10 +64,22 @@ const Styles = styled.div`
     margin: 0;
     float:left;
   }
+  .copyright-text a {
+    color: #0e538c;
+    -webkit-transition: all 0.75s ;
+    -o-transition: all 0.75s ;
+    transition: all 0.75s ;
+  }
+  .copyright-text a:hover {
+    color: #ffbe55;
+    animation: fill 1s forwards;
+    text-decoration:none;
+  } 
   @media (max-width: 991px) {
     .site-footer [class^="col-"] {
       margin-bottom: 30px;
     }
+ 
   }
   @media (max-width: 767px) {
     .site-footer {
@@ -101,6 +88,14 @@ const Styles = styled.div`
     .site-footer .copyright-text,
     .site-footer .social-icons {
       text-align: center;
+    }
+    .copyright-text {
+      float: initial;
+    }
+    .social-icons li.title {
+      display: block;
+      margin-right: 0;
+      font-weight: 600;
     }
   }
   .social-icons {
@@ -118,7 +113,7 @@ const Styles = styled.div`
     background-color: white;
     border-style: solid;
     border-width: thin;
-    color: #818a91;
+    color: #0e538c;
     font-size: 16px;
     display: inline-block;
     line-height: 44px;
@@ -131,8 +126,6 @@ const Styles = styled.div`
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
-  
-
   .social-icons.size-sm a {
     line-height: 34px;
     height: 34px;
@@ -145,27 +138,18 @@ const Styles = styled.div`
   }
   .social-icons a.twitter:hover {
     color:#00aced;
-    border-width: 1.5px;
-    line-height: 39.5px;
+    animation: fill 1s forwards;
     
   }
   .social-icons a.linkedin:hover {
     color:#007bb6;
-    border-width: 1.5px;
-    line-height: 39.5px;
+    animation: fill 1s forwards;
   }
   .social-icons a.github:hover {
     color:black;
-    border-width: 1.5px;
-    line-height: 39.5px;
+    animation: fill 1s forwards;
   }
-  @media (max-width: 767px) {
-    .social-icons li.title {
-      display: block;
-      margin-right: 0;
-      font-weight: 600;
-    }
-  }
+
 `;
 
 const Footer = () => {
@@ -188,38 +172,38 @@ const Footer = () => {
 
   return (
     <Styles>
-      <footer class="site-footer">
+      <footer className="site-footer">
         <Link to="hero" smooth duration={1000}>
           <span className={"back-to-top" + (state.scrolled ? " scrolled" : "")}>
-            <a class="angle-up" href="#">
-              <i class="fa fa-angle-up"></i>
+            <a className="angle-up" href="#">
+              <i className="fa fa-angle-up"></i>
             </a>
           </span>
         </Link>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 col-sm-6 col-xs-12">
+              <p className="copyright-text">
                 Copyright &copy; 2021 Created With Love by&nbsp;
                 <a href="https://github.com/AhmadBilal07" target="_blank">Ahmad Bilal Aslam</a>.
               </p>
             </div>
 
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
+            <div className="col-md-4 col-sm-6 col-xs-12">
+              <ul className="social-icons">
                 <li>
-                  <a class="twitter" href="https://twitter.com/AhmadBilal07" target="_blank">
-                    <i class="fa fa-twitter"></i>
+                  <a className="twitter" href="https://twitter.com/AhmadBilal07" target="_blank">
+                    <i className="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a class="github" href="https://github.com/AhmadBilal07" target="_blank">
-                    <i class="fa fa-github"></i>
+                  <a className="github" href="https://github.com/AhmadBilal07" target="_blank">
+                    <i className="fa fa-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a class="linkedin" href="https://www.linkedin.com/in/ahmadbilal07/" target="_blank">
-                    <i class="fa fa-linkedin"></i>
+                  <a className="linkedin" href="https://www.linkedin.com/in/ahmadbilal07/" target="_blank">
+                    <i className="fa fa-linkedin"></i>
                   </a>
                 </li>
               </ul>

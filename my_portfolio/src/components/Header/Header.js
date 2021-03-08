@@ -69,7 +69,8 @@ const Styles = styled.div`
 
   #mainNav ul li a {
     transition: all 0.75s;
-    
+    -webkit-transition: all 0.75s;
+    -o-transition: all 0.75s;
   }
 
   #mainNav ul li a:after {
