@@ -132,10 +132,10 @@ const Styles = styled.div`
     width: 34px;
     font-size: 14px;
   }
-  a.angle-up {
-    font-size: 34px;
-    padding: 5px;
-  }
+  // a.angle-up {
+  //   font-size: 34px;
+  //   padding: 5px;
+  // }
   .social-icons a.twitter:hover {
     color:#00aced;
     animation: fill 1s forwards;
@@ -148,6 +148,11 @@ const Styles = styled.div`
   .social-icons a.github:hover {
     color:black;
     animation: fill 1s forwards;
+  }
+  .angle-up {
+    font-size: 1.5em;
+    line-height: 38px;
+    color: #0e538c;
   }
 
 `;
@@ -175,9 +180,7 @@ const Footer = () => {
       <footer className="site-footer">
         <Link to="hero" smooth duration={1000}>
           <span className={"back-to-top" + (state.scrolled ? " scrolled" : "")}>
-            <a className="angle-up" href="#">
-              <i className="fa fa-angle-up"></i>
-            </a>
+            <p className="angle-up" >&#11165;</p>
           </span>
         </Link>
         <div className="container">
