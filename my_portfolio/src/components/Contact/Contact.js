@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import FormHandler from "../FormHandler/FormHandler";
-
+import Form from "../Form/Form";
 const Styles = styled.div`
   #contactSection {
     display:flex;
@@ -45,7 +44,7 @@ const Contact = () => {
       <section id="contactSection">
         <section id="contactSectionLeft"></section>
         <section id="contactSectionRight">
-          <FormHandler></FormHandler>
+          <Form></Form>
           </section>
         
       </section>
