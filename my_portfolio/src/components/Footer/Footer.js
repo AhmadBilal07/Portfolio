@@ -187,7 +187,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-8 col-sm-6 col-xs-12">
               <p className="copyright-text">
-                Copyright &copy; 2021 Created With Love by&nbsp;
+                Copyright &copy; 2021 Made With 💖 by&nbsp;
                 <a href="https://github.com/AhmadBilal07" target="_blank">Ahmad Bilal Aslam</a>.
               </p>
             </div>
