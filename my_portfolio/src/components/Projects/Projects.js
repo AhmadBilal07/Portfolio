@@ -81,6 +81,7 @@ const Projects = () => {
             <Project
               class="project"
               title="Burger Builder"
+              link="https://ahmadbilal07.github.io/BurgerBuilder/"
               img={process.env.PUBLIC_URL + "/assets/burger1.svg"}
             ></Project>
             <Project
