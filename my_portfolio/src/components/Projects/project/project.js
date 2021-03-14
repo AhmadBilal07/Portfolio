@@ -1,46 +1,46 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Typography from "@material-ui/core/Typography";
-
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 215,
-    minWidth:215
-  },
-  media: {
-    height: 100,
-  },
-});
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import styled from "styled-components";
+//import { makeStyles } from "@material-ui/core/styles";
+// import Card from "@material-ui/core/Card";
+// import CardActionArea from "@material-ui/core/CardActionArea";
+// import CardContent from "@material-ui/core/CardContent";
+// import CardMedia from "@material-ui/core/CardMedia";
+// import Typography from "@material-ui/core/Typography";
+const Styles = styled.div`
+  .card-img-top{
+    max-width: 220px;
+    text-align: center;
+    max-height: 150px;
+  }
+  .card{
+      min-width:220px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     // border-style: solid;
+  }
+  .btn-primary{
+    margin-bottom:5px;
+  }
+ `
 
 export default function MediaCard(props) {
-  const classes = useStyles();
 
   return (
+    <Styles>
     <section className={props.class}>
-      <a href = {props.link} target='_blank' style={{textDecoration: "none"}} >
-        <Card className={classes.root}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image={props.img}
-              title={props.title}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                {props.title}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </a>
+      <Card style={{ width: "18rem" }}>
+        <Card.Img variant="top" src={props.img} />
+        <Card.Body>
+          <Card.Title>{props.title}</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text>
+          <Button variant="primary"  >Go somewhere</Button>
+        </Card.Body>
+      </Card>
     </section>
+    </Styles>
   );
 }

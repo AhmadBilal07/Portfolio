@@ -65,12 +65,12 @@ const Projects = () => {
               class="project"
               title="CPO Outlets"
               link="https://www.cpooutlets.com/"
-              img={process.env.PUBLIC_URL + "/assets/CPO-svg.svg"}
+              img={process.env.PUBLIC_URL + "/assets/CPO-svg1.svg"}
             ></Project>
             <Project
               class="project"
               title="Burger Builder"
-              img={process.env.PUBLIC_URL + "/assets/burger1.svg"}
+              img={process.env.PUBLIC_URL + "/assets/burger2.svg"}
             ></Project>
             <Project
               class="project"
@@ -82,7 +82,7 @@ const Projects = () => {
               class="project"
               title="Burger Builder"
               link="https://ahmadbilal07.github.io/BurgerBuilder/"
-              img={process.env.PUBLIC_URL + "/assets/burger1.svg"}
+              img={process.env.PUBLIC_URL + "/assets/burger2.svg"}
             ></Project>
             <Project
               class="project"

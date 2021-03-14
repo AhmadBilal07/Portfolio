@@ -97,6 +97,9 @@ const Styles = styled.div`
       margin-right: 0;
       font-weight: 600;
     }
+    .angle-up{
+      content:"Up";
+    }
   }
   .social-icons {
     padding-left: 0;
@@ -132,10 +135,6 @@ const Styles = styled.div`
     width: 34px;
     font-size: 14px;
   }
-  // a.angle-up {
-  //   font-size: 34px;
-  //   padding: 5px;
-  // }
   .social-icons a.twitter:hover {
     color:#00aced;
     animation: fill 1s forwards;
