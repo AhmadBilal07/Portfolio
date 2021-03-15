@@ -12,14 +12,16 @@ const Styles = styled.div`
   .card-img-top{
     max-width: 220px;
     text-align: center;
-    max-height: 150px;
+    height: 80px
+;
   }
   .card{
-      min-width:220px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      border-radius: 5px 20px 5px;
-      //
-      display: inline-block;
+  height:230.3px;
+  min-width:220px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px 20px 5px;
+  //
+  display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -34,35 +36,34 @@ const Styles = styled.div`
   }
   .card:hover{
     background-color: rgba(255, 202, 122,0.5)
-    //background-color: linear-gradient(220deg, rgba(255,202,122,1) 0%, rgba(255,228,187,1) 46%, rgba(255,202,122,1) 100%);;
-  }
+    }
   .card-title{
     margin-top:0px;
+    margin-bottom: 0px;
   }
-  .card-title:hover{
-    
+  .card:hover .card-title{
+    color:black;
   }
- `
+  .card-text{    
+    text-align: justify;
+    margin: 5px 10px;}
+ `;
 
 export default function MediaCard(props) {
-
   return (
     <Styles>
-    <section className={props.class}>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={props.img} />
-        <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <a href={props.link} target="_blank">
-          <Button variant="primary"  >Visit</Button>
-          </a>
-        </Card.Body>
-      </Card>
-    </section>
+      <section className={props.class}>
+        <Card style={{ width: "18rem" }}>
+          <Card.Img variant="top" src={props.img} />
+          <Card.Body>
+            <Card.Title>{props.title}</Card.Title>
+            <Card.Text>{props.content}</Card.Text>
+            <a href={props.link} target="_blank">
+              <Button variant="primary">Visit</Button>
+            </a>
+          </Card.Body>
+        </Card>
+      </section>
     </Styles>
   );
 }

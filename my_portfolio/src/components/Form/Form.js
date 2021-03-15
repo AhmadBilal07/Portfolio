@@ -56,7 +56,7 @@ const Styles = styled.div`
   }
 
   .submitButton {
-    background-color: #0e538c;
+    background-color: #337AB7;
     color: white;
     font-family: sans-serif;
     font-size: 14px;
@@ -67,47 +67,6 @@ const Styles = styled.div`
     color: #ffbe55;
   }
 `;
-
-//  const Form = (props) => {
-//   const [state, setState] = useState({
-//     name: "",
-//     email: "",
-//     msg: "",
-//   });
-//   const onInputChange = (event) => {
-//     const { name, value } = event.target;
-//     setState({
-//       ...state,
-//       [name]: value,
-//     });
-//   };
-
-//   return (
-
-//     <Styles>
-//       <form
-//         onSubmit={(e) => {
-//           props.submit(state);
-//         }}action={props.action} method="POST"
-//       >
-// <div>
-//   <label>Name</label>
-//   <input name="name" onChange={onInputChange} value={state.name} required />
-// </div>
-// <div>
-//   <label>Email</label>
-//   <input name="email" onChange={onInputChange} value={state.email} required type="email" />
-// </div>
-// <div>
-//   <label>Message</label>
-//   <input name="msg" onChange={onInputChange} value={state.msg} type="text" required/>
-// </div>
-// <input type="submit" className="submitButton" value="Shoot!"/>
-//       </form>
-//     </Styles>
-//   );
-// };
-// export default Form;
 
 export default class MyForm extends React.Component {
   constructor(props) {

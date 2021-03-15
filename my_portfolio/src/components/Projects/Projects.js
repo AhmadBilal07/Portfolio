@@ -9,7 +9,8 @@ h1 {
   font-family: 'Roboto', sans-serif; !important;
   font-weight: normal;
   color:#0E538C;
-  padding-top: 60px !important; 
+  padding-top: 50px !important; 
+  margin-bottom:0px;
 }
   #projectsSection .project {
     padding: 10px !important;
@@ -65,38 +66,39 @@ const Projects = () => {
               class="project"
               title="CPO Outlets"
               link="https://www.cpooutlets.com/"
+              content="CPO Outlets is America’s leading online retailer for tools & equipment. Developed in Salesforce Commerce Cloud."
               img={process.env.PUBLIC_URL + "/assets/CPO-svg1.svg"}
             ></Project>
             <Project
               class="project"
               title="Burger Builder"
               link="https://ahmadbilal07.github.io/BurgerBuilder/"
-              img={process.env.PUBLIC_URL + "/assets/burger2.svg"}
-            ></Project>
-            <Project
-              class="project"
-              title="Face Scope"
-              link="https://facescope.herokuapp.com/"
-              img={process.env.PUBLIC_URL + "/assets/faceScope.png"}
-            ></Project>
-            <Project
-              class="project"
-              title="Burger Builder"
-              link="https://ahmadbilal07.github.io/BurgerBuilder/"
+              content="A react application where a user can dynamically build a burger, add ingredients and then in the end of course also purchase it. "
               img={process.env.PUBLIC_URL + "/assets/burger2.svg"}
             ></Project>
             <Project
               class="project"
               title="Portfolio Builder"
-              link="https://facescope.herokuapp.com/"
+              link="https://github.com/AhmadBilal07/Portfolio"
+              content=" A react application which enables people to develop a portfolio website just like this by simply entering information."
               img={process.env.PUBLIC_URL + "/assets/support-team1.svg"}
             ></Project>
+            <Project
+              class="project"
+              title="Face Scope"
+              link="https://facescope.herokuapp.com/"
+              content="A real time application recording & maintaining trespassers and violators information developed using AWS and Node.js"
+              img={process.env.PUBLIC_URL + "/assets/faceScope.png"}
+            ></Project>
+            {/* <Project
+              class="project"
+              title="Burger Builder"
+              link="https://ahmadbilal07.github.io/BurgerBuilder/"
+              content=""
+              img={process.env.PUBLIC_URL + "/assets/burger2.svg"}
+            ></Project> */}
           </Fade>
         </section>
-
-        {/* <section id="projectsSectionRight">
-          <img></img>
-        </section> */}
       </section>
     </Styles>
   );
