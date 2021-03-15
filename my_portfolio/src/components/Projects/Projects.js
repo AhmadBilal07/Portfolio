@@ -70,6 +70,7 @@ const Projects = () => {
             <Project
               class="project"
               title="Burger Builder"
+              link="https://ahmadbilal07.github.io/BurgerBuilder/"
               img={process.env.PUBLIC_URL + "/assets/burger2.svg"}
             ></Project>
             <Project
@@ -88,7 +89,7 @@ const Projects = () => {
               class="project"
               title="Portfolio Builder"
               link="https://facescope.herokuapp.com/"
-              img={process.env.PUBLIC_URL + "/assets/support-team.svg"}
+              img={process.env.PUBLIC_URL + "/assets/support-team1.svg"}
             ></Project>
           </Fade>
         </section>
