@@ -23,12 +23,9 @@ const Styles = styled.div`
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
- 
   overflow: hidden;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
+  -webkit-transition:  background-color 1s ease;
+  transition:  background-color 1s ease;
 }
   }
   .btn-primary{
@@ -36,14 +33,14 @@ const Styles = styled.div`
     width:121px;
   }
   .card:hover{
-    background-color: #2098D1;
-    color: white;
+    background-color: rgba(255, 202, 122,0.5)
+    //background-color: linear-gradient(220deg, rgba(255,202,122,1) 0%, rgba(255,228,187,1) 46%, rgba(255,202,122,1) 100%);;
   }
   .card-title{
     margin-top:0px;
   }
   .card-title:hover{
-    color: #FFBE55;
+    
   }
  `
 
