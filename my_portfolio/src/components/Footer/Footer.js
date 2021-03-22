@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { FaCaretUp  } from 'react-icons/fa';
 import styled from "styled-components";
 const Styles = styled.div`
   .back-to-top {
@@ -98,7 +99,7 @@ const Styles = styled.div`
       font-weight: 600;
     }
     .angle-up{
-      content:"Up";
+      line-height: 38px !important;
     }
   }
   .social-icons {
@@ -149,8 +150,8 @@ const Styles = styled.div`
     animation: fill 1s forwards;
   }
   .angle-up {
-    font-size: 1.5em;
-    line-height: 38px;
+    font-size: 1.7em;
+    line-height: 43px;
     color: #0e538c;
   }
 
@@ -179,7 +180,7 @@ const Footer = () => {
       <footer className="site-footer">
         <Link to="hero" smooth duration={1000}>
           <span className={"back-to-top" + (state.scrolled ? " scrolled" : "")}>
-            <p className="angle-up" >&#11165;</p>
+            <p className="angle-up" ><FaCaretUp /></p>
           </span>
         </Link>
         <div className="container">
