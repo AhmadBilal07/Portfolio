@@ -11,6 +11,9 @@ import jsLogo from "./images/jsLogo.png";
 import salesforceLogo from "./images/salesforce.png";
 import ScikitLearnLogo from "./images/ScikitLearn.png";
 import sqlLogo from "./images/sql.png";
+import bootstrap from "./images/bootstrap.png";
+import materialize from "./images/materialize.png";
+import firebase from "./images/firebase.png";
 const Styles = styled.div`
   #skillSection {
     display:flex !important;
@@ -78,34 +81,56 @@ const Skills = () => {
         <Fade bottom={true} duration={1000} delay={500} distance="30px">
           <section id="skillSectionRight">
             <span className="skill">
-              <img src={htmlLogo} title="HTML" alt="HTML"/>
+              <img src={htmlLogo} title="HTML" alt="HTML" />
             </span>
             <span className="skill">
-              <img src={cssLogo} title="CSS 3" alt="CSS 3"/>
+              <img src={cssLogo} title="CSS 3" alt="CSS 3" />
             </span>
             <span className="skill">
-              <img src={jsLogo} title="JavaScript" alt="JavaScript"/>
+              <img src={jsLogo} title="JavaScript" alt="JavaScript" />
             </span>
             <span className="skill">
-              <img src={nodejsLogo} title="Node.js" alt="Node.js"/>
+              <img src={nodejsLogo} title="Node.js" alt="Node.js" />
             </span>
             <span className="skill">
-              <img src={reactLogo} title="ReactJs" alt="ReactJs"/>
+              <img src={reactLogo} title="ReactJs" alt="ReactJs" />
             </span>
             <span className="skill">
-              <img src={mongodbLogo} title="MongoDB" alt="MongoDB"/>
+              <img
+                src={materialize}
+                title="Materialize Css"
+                alt="Materialize Css"
+              />
             </span>
             <span className="skill">
-              <img src={sqlLogo} title="SQL" alt="SQL"/>
+              <img src={bootstrap} title="Bootstrap" alt="Bootstrap" />
             </span>
             <span className="skill">
-              <img src={salesforceLogo} title="Salesforce Commerce Cloud" alt="Salesforce Commerce Cloud"/>
+              <img src={firebase} title="Firebase" alt="Firebase" />
+            </span>
+
+            <span className="skill">
+              <img src={mongodbLogo} title="MongoDB" alt="MongoDB" />
             </span>
             <span className="skill">
-              <img src={pythonLogo} title="Python" alt="Python"/>
+              <img src={sqlLogo} title="SQL" alt="SQL" />
             </span>
             <span className="skill">
-              <img src={ScikitLearnLogo} title="SciKit Learn" alt="SciKit Learn"/>
+              <img
+                src={salesforceLogo}
+                title="Salesforce Commerce Cloud"
+                alt="Salesforce Commerce Cloud"
+              />
+            </span>
+            <span className="skill">
+              <img src={pythonLogo} title="Python" alt="Python" />
+            </span>
+            <span className="skill">
+              <img
+                src={ScikitLearnLogo}
+                title="SciKit Learn"
+                alt="SciKit Learn"
+              />
             </span>
           </section>
         </Fade>

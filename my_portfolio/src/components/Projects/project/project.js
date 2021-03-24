@@ -35,7 +35,9 @@ const Styles = styled.div`
     width:121px;
   }
   .card:hover{
-    background-color: rgba(255, 202, 122,0.5)
+    background-color: rgba(255, 239, 214,0.5);
+    cursor: default;
+
     }
   .card-title{
     margin-top:0px;

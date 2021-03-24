@@ -76,6 +76,13 @@ const Projects = () => {
               content="A react application where a user can dynamically build a burger, add ingredients and then in the end of course also purchase it. "
               img={process.env.PUBLIC_URL + "/assets/burger2.svg"}
             ></Project>
+              <Project
+              class="project"
+              title="Meeting Log"
+              link="https://meeting-logger07.web.app/"
+              content=" A Single Page Application which creates meetings, allows people to check in, and picks random users to award giveaways."
+              img={process.env.PUBLIC_URL + "/assets/meeting.svg"}
+            ></Project>
             <Project
               class="project"
               title="Portfolio Builder"
@@ -90,13 +97,7 @@ const Projects = () => {
               content="A real time application recording & maintaining trespassers and violators information developed using AWS and Node.js"
               img={process.env.PUBLIC_URL + "/assets/faceScope.png"}
             ></Project>
-            {/* <Project
-              class="project"
-              title="Burger Builder"
-              link="https://ahmadbilal07.github.io/BurgerBuilder/"
-              content=""
-              img={process.env.PUBLIC_URL + "/assets/burger2.svg"}
-            ></Project> */}
+     
           </Fade>
         </section>
       </section>
