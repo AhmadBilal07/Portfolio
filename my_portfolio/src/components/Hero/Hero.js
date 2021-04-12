@@ -38,6 +38,23 @@ const Styles = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  @media (max-width: 767px) {
+    #hero {
+    background-position: center;
+ 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    margin-bottom: -15%;
+    margin-top:-25%;
+    }
+    .hero-title{
+      margin-top: 120%;
+      margin-left: 10%;
+      font-size: 4.5vw;
+      text-align:center;
+    }
+  }
 `;
 
 const Hero = () => {

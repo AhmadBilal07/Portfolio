@@ -71,24 +71,31 @@ const Projects = () => {
             ></Project>
             <Project
               class="project"
+              title="Meeting Log"
+              link="https://meeting-logger07.web.app/"
+              content=" A SPA which creates meetings, allows people to check in, and picks random users to award giveaways."
+              img={process.env.PUBLIC_URL + "/assets/meeting.svg"}
+            ></Project>
+            <Project
+              class="project"
               title="Burger Builder"
               link="https://ahmadbilal07.github.io/BurgerBuilder/"
               content="A react application where a user can dynamically build a burger, add ingredients and then in the end of course also purchase it. "
               img={process.env.PUBLIC_URL + "/assets/burger2.svg"}
             ></Project>
-              <Project
+                        <Project
               class="project"
-              title="Meeting Log"
-              link="https://meeting-logger07.web.app/"
-              content=" A Single Page Application which creates meetings, allows people to check in, and picks random users to award giveaways."
-              img={process.env.PUBLIC_URL + "/assets/meeting.svg"}
+              title="Firebase Clone"
+              link="http://freelancer-firebase-one-page.herokuapp.com/"
+              content="A single page template of Google firebase using semantic UI."
+              img={process.env.PUBLIC_URL + "/assets/firebase.png"}
             ></Project>
             <Project
               class="project"
-              title="Portfolio Builder"
-              link="https://github.com/AhmadBilal07/Portfolio"
-              content=" A react application which enables people to develop a portfolio website just like this by simply entering information."
-              img={process.env.PUBLIC_URL + "/assets/support-team1.svg"}
+              title="Excelcium"
+              link="http://excelcium-modern.herokuapp.com/"
+              content="A simple redesign of a 2000-era website in plain HTML/CSS using bootstrap developed for a company."
+              img={process.env.PUBLIC_URL + "/assets/excelcium-logo.png"}
             ></Project>
             <Project
               class="project"
@@ -97,7 +104,13 @@ const Projects = () => {
               content="A real time application recording & maintaining trespassers and violators information developed using AWS and Node.js"
               img={process.env.PUBLIC_URL + "/assets/faceScope.png"}
             ></Project>
-     
+            {/* <Project
+              class="project"
+              title="Portfolio Builder"
+              link="https://github.com/AhmadBilal07/Portfolio-Builder"
+              content=" A react application which enables people to develop a portfolio website by simply connecting with LinkedIn."
+              img={process.env.PUBLIC_URL + "/assets/support-team1.svg"}
+            ></Project> */}
           </Fade>
         </section>
       </section>

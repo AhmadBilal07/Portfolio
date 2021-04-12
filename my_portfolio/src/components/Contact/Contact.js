@@ -11,8 +11,7 @@ const Styles = styled.div`
     margin-top: -50px;
   }
   #contactSectionRight {
-    padding-top:5%;
-
+    padding-top:7%;
   }
   #contactSectionLeft {
     min-height:100px !important;
@@ -34,6 +33,12 @@ const Styles = styled.div`
     font-weight: normal;
     color:#0E538C;
     padding-top: 60px !important; 
+  }
+  @media (max-width: 767px) {  
+    #contactSectionLeft {
+      min-height: 200px !important;
+      background-position: center;
+    }
   }
 `;
 
